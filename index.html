@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for Player Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Sidebar / Navigation Header -->
+    <header class="app-header">
+      <h1><i class="fa-solid fa-music"></i> Ear Candy</h1>
+      
+      <!-- Search & Filter Controls -->
+      <div class="controls-bar">
+        <input type="text" id="searchInput" placeholder="Search by title or artist...">
+        <select id="categoryFilter">
+  <option value="All">All Categories</option>
+  <option value="Naat">Naat</option>
+  <option value="Remembrance">Remembrance</option>
+  <option value="Hamad">Hamad</option>
+  <option value="Nasheed">Nasheed</option>
+  <option value="Wedding">Wedding</option>
+</select>
+
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Player Display Card -->
+      <section class="player-card">
+        <div class="album-art">
+          <img id="coverArt" src="https://picsum.photos/300" alt="Album Cover">
+        </div>
+        
+        <div class="track-details">
+          <h2 id="trackTitle">Select a Track</h2>
+          <p id="trackArtist">Artist Name</p>
+          <span id="trackCategory" class="badge">Genre</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <span id="currentTime">0:00</span>
+          <input type="range" id="progressBar" value="0" max="100">
+          <span id="duration">0:00</span>
+        </div>
+
+        <!-- Playback Controls -->
+        <div class="player-controls">
+          <button id="prevBtn" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+          <button id="playPauseBtn" class="play-btn" title="Play/Pause"><i class="fa-solid fa-play"></i></button>
+          <button id="nextBtn" title="Next"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+
+        <!-- Volume Control -->
+        <div class="volume-container">
+          <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+          <input type="range" id="volumeBar" min="0" max="100" value="80">
+        </div>
+      </section>
+
+      <!-- Playlist Section -->
+      <section class="playlist-section">
+        <h3>Playlist</h3>
+        <ul id="playlist" class="playlist">
+          <!-- Dynamically populated by JS -->
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- Hidden Audio Element -->
+  <audio id="audioPlayer"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
