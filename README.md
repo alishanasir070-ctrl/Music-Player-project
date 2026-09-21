@@ -25,7 +25,7 @@ A clean, responsive, and customizable web-based audio player featuring a modern 
 ## 🚀 Live Demo
 
 Check out the live application here:  
-👉 `https://<YOUR-GITHUB-USERNAME>.github.io/<YOUR-REPOSITORY-NAME>/`
+👉 https://alishanasir070-ctrl.github.io/Music-Player-project/
 
 ---
 
