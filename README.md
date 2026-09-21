@@ -33,4 +33,4 @@ Check out the live application here:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)<YOUR-GITHUB-USERNAME>/<YOUR-REPOSITORY-NAME>.git
+git clone https://github.com/<YOUR-GITHUB-USERNAME>/Music-Player-project.git
